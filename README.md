@@ -8,7 +8,7 @@
 2. clone 專案到本地電腦，並在終端機輸入: 
 
 ```
- $ git clone https://github.com/TimWang95/alpha_shop.git
+ $ git clone https://github.com/tales91817/AlphaShop.git
 ```
 
 3. 透過終端機指令cd進入專案資料夾，cd my-app，並輸入:
