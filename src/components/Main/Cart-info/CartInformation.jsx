@@ -60,13 +60,13 @@ export default function CartInformation() {
 //   const content = [
 //     {
 //       productName: "破壞補丁修身牛仔褲",
-//       productImg: Product01,
+//       productImg: <Product01 />,
 //       price: '$3,999',
 //       count: 1,
 //     },
 //     {
 //       productName: "刷色直筒牛仔褲",
-//       productImg: Product02,
+//       productImg: <Product02 />,
 //       price: '$1,299',
 //       count: 1,
 //     },
@@ -76,7 +76,7 @@ export default function CartInformation() {
 //     <>
 //       {content.map(product => 
 //         <div className="product-container col col-12" data-count={product.count} data-price={product.price}>
-//           <Product02  className="img-container" />
+//           <img src={content.productImg} alt={content.productName} className="img-container" />
 //           <div className="product-info">
 //             <div className="product-name">{product.productName}</div>
 //             <div className="product-control-container">
