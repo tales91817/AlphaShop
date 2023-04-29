@@ -15,25 +15,35 @@ export default function Footer() {
                     <section className="footer-section">
                         <h2 className="section-title">客戶服務</h2>
                         <div className="section-content">
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">運送說明</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">退換貨相關</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">付款資訊</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">FAQ</a>
                         </div>
                     </section>
                     <section className="footer-section">
                         <h2 className="section-title">關於我們</h2>
                         <div className="section-content">
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">品牌故事</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">媒體聯繫</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">Press kit</a>
                         </div>
                     </section>
                     <section className="footer-section">
                         <h2 className="section-title">資訊</h2>
                         <div className="section-content">
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">隱私權政策</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">Cookie</a>
+                            {/* eslint-disable-next-line */}
                             <a className="page-link" href="#">GDPR</a>
                         </div>
                     </section>
