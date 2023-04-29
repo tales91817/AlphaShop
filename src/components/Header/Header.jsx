@@ -22,18 +22,23 @@ export default function Header() {
                     <nav className="navbar-menu">
                         <ul className="nav-list site-menu-list mr-auto">
                             <li className="nav-item">
+                            {/* eslint-disable-next-line */}
                                 <a className="nav-link" href="#">男款</a>
                             </li>
                             <li className="nav-item">
+                                {/* eslint-disable-next-line */}
                                 <a className="nav-link" href="#">女款</a>
                             </li>
                             <li className="nav-item">
+                                {/* eslint-disable-next-line */}
                                 <a className="nav-link" href="#">最新消息</a>
                             </li>
                             <li className="nav-item">
+                                {/* eslint-disable-next-line */}
                                 <a className="nav-link" href="#">客製商品</a>
                             </li>
                             <li className="nav-item">
+                                {/* eslint-disable-next-line */}
                                 <a className="nav-link" href="#">聯絡我們</a>
                             </li>
                         </ul>
@@ -57,6 +62,7 @@ export default function Header() {
                     </nav>
 
                     {/* logo */}
+                    {/* eslint-disable-next-line */}
                     <a className="header-logo-container" href="#">
                         <LOGO className="icon-logo cursor-point" />
                     </a>

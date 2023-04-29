@@ -20,11 +20,11 @@ export default function CartInformation() {
                   <div class="product-control-container">
                     <div class="product-control">
                       <Minus class="product-action plus" />
-                      <span class="product-count"></span>
+                      <span class="product-count">1</span>
                       <Plus class="product-action plus" />
                     </div>
                   </div>
-                  <div class="price"></div>
+                  <div class="price">$3,999</div>
                 </div>
               </div>
               <div class="product-container col col-12" data-count="0" data-price="1299">
@@ -38,7 +38,7 @@ export default function CartInformation() {
                       <Plus class="product-action plus" />
                     </div>
                   </div>
-                  <div class="price"></div>
+                  <div class="price">$1,299</div>
                 </div>
               </div>
           </section>
