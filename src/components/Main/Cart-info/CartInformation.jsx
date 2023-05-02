@@ -1,41 +1,50 @@
-import { ReactComponent as Minus } from "../../assets/icons/Minus-button.svg"
-import { ReactComponent as Plus } from "../../assets/icons/Plus-button.svg"
-import Product01 from "../../assets/images/Product-1.svg"
-import Product02 from "../../assets/images/Product-2.svg"
+import Products from "./Products"
+// import Product01 from "../../assets/images/Product-1.svg"
+// import Product02 from "../../assets/images/Product-2.svg"
 
 function CartContent() {
-  const content = [
+  // const content = [
+  //   {
+  //     productName: "破壞補丁修身牛仔褲",
+  //     productImg: Product01,
+  //     price: '$3,999',
+  //     count: 1,
+  //   },
+  //   {
+  //     productName: "刷色直筒牛仔褲",
+  //     productImg: Product02,
+  //     price: '$1,299',
+  //     count: 1,
+  //   },
+  // ]
+
+  const products = [
     {
-      productName: "破壞補丁修身牛仔褲",
-      productImg: Product01,
-      price: '$3,999',
-      count: 1,
+      id: '1',
+      name: '貓咪罐罐',
+      img: 'https://picsum.photos/300/300?text=1',
+      price: 100,
+      quantity: 2,
     },
     {
-      productName: "刷色直筒牛仔褲",
-      productImg: Product02,
-      price: '$1,299',
-      count: 1,
+      id: '2',
+      name: '貓咪干干',
+      img: 'https://picsum.photos/300/300?text=2',
+      price: 200,
+      quantity: 1,
     },
   ]
   
   return (
     <>
-      {content.map((product, i) => 
-        <div key={i} className="product-container col col-12" data-count={product.count} data-price={product.price}>
-          <img src={content.productImg} alt={content.productName} className="img-container" />
-          <div className="product-info">
-            <div className="product-name">{product.productName}</div>
-            <div className="product-control-container">
-              <div className="product-control">
-                <Minus className="product-action minus" />
-                <span className="product-count">{product.count}</span>
-                <Plus className="product-action plus" />
-              </div>
-            </div>
-            <div className="price">{product.price}</div>
-          </div>
-        </div>
+      {products.map((product) => 
+        <Products 
+          id={product.id} 
+          name={product.name} 
+          img={product.img} 
+          price={product.price} 
+          quantity={product.quantity} 
+        />
       )}
     </>
 
