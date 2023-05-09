@@ -1,9 +1,9 @@
-@import "./cart-info.scss";
+@import "../components/Main/Cart-info/cart-info.module.scss";
 @import "./darkness-theme.scss";
-@import "./footer.scss";
-@import "./form.scss";
-@import "./header.scss";
-@import "./register.scss";
+@import "../components/Footer/footer.module.scss";
+@import "../components/Main/Register/form.module.scss";
+@import "../components/Header/header.module.scss";
+@import "../components/Main/Register/register.module.scss";
 @import "./reset.scss";
 
 // font

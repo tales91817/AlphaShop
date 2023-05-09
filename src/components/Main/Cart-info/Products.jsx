@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReactComponent as Minus } from "../../assets/icons/Minus-button.svg"
-import { ReactComponent as Plus } from "../../assets/icons/Plus-button.svg"
+import { ReactComponent as Minus } from "../../../assets/icons/Minus-button.svg"
+import { ReactComponent as Plus } from "../../../assets/icons/Plus-button.svg"
 
 const Products = ({ id, name, img, price, quantity }) => {
   return (
