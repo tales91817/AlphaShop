@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ReactComponent as Minus } from "../../../assets/icons/Minus-button.svg"
 import { ReactComponent as Plus } from "../../../assets/icons/Plus-button.svg"
 
-const Products = ({ id, name, img, price, quantity }) => {
+const Products = ({ id, name, img, price, onCalculate }) => {
+  
+  const [quantity, setQuantity] = useState(0)
+
+  const handleMinusNum = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1)
+      onCalculate(-price)
+    }
+  }
+
+  const handlePlusNum = () => {
+    if (quantity < 999 ) {
+      setQuantity(quantity + 1)
+      onCalculate(+price)
+    }
+    
+  }
+  
   return (
     <>
         <div key={id} className="product-container col col-12" data-count={quantity} data-price={price}>
@@ -11,9 +29,9 @@ const Products = ({ id, name, img, price, quantity }) => {
             <div className="product-name">{name}</div>
             <div className="product-control-container">
               <div className="product-control">
-                <Minus className="product-action minus" />
+                <Minus className="product-action minus" onClick={handleMinusNum}/>
                 <span className="product-count">{quantity}</span>
-                <Plus className="product-action plus" />
+                <Plus className="product-action plus" onClick={handlePlusNum}/>
               </div>
             </div>
             <div className="price">{price}</div>
