@@ -19,9 +19,9 @@ export default function Main() {
 
     return (
         <>
-            <main class="site-main">
-                <div class="main-container">
-                    <Register dataPhase={dataPhase}/>
+            <main className="site-main">
+                <div className="main-container">
+                    <Register dataPhase={dataPhase} />
                     <CartInformation />
                     <ProgressControl onClick={handleClick}/>
                 </div>

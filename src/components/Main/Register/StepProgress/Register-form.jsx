@@ -6,7 +6,7 @@ import Step3 from "./Steps/Step3"
 export default function RegisterForm() {
     return (
         <>
-            <section class="form-container col col-12">
+            <section className="form-container col col-12">
                 <Step1 />
                 <Step2 />
                 <Step3 />

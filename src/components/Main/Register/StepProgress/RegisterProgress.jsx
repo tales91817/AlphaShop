@@ -1,6 +1,6 @@
-import { ReactComponent as CompletedIcon } from "../../../../assets/icons/completed.svg"
+import { ReactComponent as CompletedIcon } from "assets/icons/completed.svg"
 
-const ProgressState = ({ number, phase, stateTitle}) => {
+const ProgressState = ({ number, phase, stateTitle }) => {
   return (
     <>
       <span className="progress-group" data-phase={phase} key={number}>
